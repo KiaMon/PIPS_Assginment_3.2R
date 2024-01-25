@@ -1,3 +1,5 @@
+
+
 cheat <- function(question_number) {
   if (question_number == 17) {
     cat("The shortcut to format code nicely is ctrl+shift+A.")
@@ -12,24 +14,21 @@ cheat <- function(question_number) {
     print(cars_plot)"
     )
   }
-  if (question_number == 3) {
+  if (question_number == 5) {
     cat(
-      "Q3.1.1: I added appropriate spaces to the solution. I also made the
-      variable names self-explanatory and added underscores to indicate spacing.
-      I changed the comments to say why the code exists, not what it does.
-      Finally, I edited the code to fit the 80 character limit.
+      '# original plot
+      plot(cars$speed, cars$dist)
 
-      Q3.1.3:I added correct spacing to make the code more readable. I also added
-      line breaks to keep within the 80 character limit. Further, I changed the
-      object name that the plot is assigned to to be self-explanatory. Lastly I
-      improved the indentation."
+      # improved plot
+      plot(cars$speed, cars$dist,
+          # 1. added title and axis labels
+          main = "Plot of Car Distance vs Speed", xlab = "Speed", ylab = "Distance") 
+      # 2. added grid to improve readability
+      grid(nx = NULL, ny = NULL, lty = 1, col = "lightgray", lwd = 1)
+      # 3. added regression line
+      abline(lm(cars$dist ~ cars$speed, data = mtcars), col = "blue", lwd = 1.5)' 
     )
   }
 }
 
-cheat(3)
-
-# The second function cheat() takes one argument specifying which exercise from
-# assignment 3.1. the user of your package wants to cheat on. Given the exercise
-# number, your cheat() function tells the user the correct solution.
-# The cheat function should work for at least 3 exercises.
+cheat(5)
