@@ -1,3 +1,5 @@
+
+# use this to get reminded of various animals that outrank you in the military
 remind_me <- function() {
   animals_that_outrank_me <-
     c("Nils Olav", "King Neptune", "Sergeant Major Fosco", 
@@ -7,4 +9,4 @@ remind_me <- function() {
   return(animals_that_outrank_me)
 }
 
-remind_me()
+remind_me() # this function has no arguments, so this is the only way to use it

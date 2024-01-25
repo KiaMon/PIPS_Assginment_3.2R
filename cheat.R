@@ -1,5 +1,5 @@
 
-
+# use this to return the answer for question 5, 7, or 17 from assignment 3.1
 cheat <- function(question_number) {
   if (question_number == 17) {
     cat("The shortcut to format code nicely is ctrl+shift+A.")
@@ -31,4 +31,4 @@ cheat <- function(question_number) {
   }
 }
 
-cheat(5)
+cheat(5) # example use where you are traying to cheat on question 5
