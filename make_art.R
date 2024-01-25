@@ -38,4 +38,4 @@ make_art <- function(chosen_seed = 123) { # seed to set randomness is input
     exit_fade()
 }
 
-make_art()
+make_art() # example use of the function with the seed being set at 5344
